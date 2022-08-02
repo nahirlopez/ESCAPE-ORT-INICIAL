@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -17,10 +18,12 @@ public class player : MonoBehaviour
 
     public GameObject llave;
     public GameObject puerta;
+    int bienvenidoscounter;
     void Start()
     {
         //hasJump = true;
         llavebl = false;
+        bienvenidoscounter = 0;
         //rb = GetComponent<Rigidbody>();
     }
 
@@ -71,6 +74,12 @@ public class player : MonoBehaviour
         {
             puerta.SetActive(true);
             
+        }
+
+        if (col.gameObject.name == "bienvenidos" && bienvenidoscounter == 0)
+        {
+            SceneManager.LoadScene("ranzo");
+
         }
     }
 }

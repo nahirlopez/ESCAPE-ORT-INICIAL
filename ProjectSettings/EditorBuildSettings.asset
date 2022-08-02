@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/COMIENZO.unity
+    guid: 4b222a132d194c5448ff95d090abb569
+  - enabled: 1
+    path: Assets/Scenes/ranzo.unity
+    guid: fad1e043b0cae8946a5ead850d6380bf
   m_configObjects: {}
